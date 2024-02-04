@@ -4,10 +4,10 @@
   "description": "jekyll with tailwind to s3 via github actions",
   "main": "postcss.config.js",
   "dependencies": {
-    "autoprefixer": "^10.4.16",
-    "cssnano": "^6.0.2",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.4.0"
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {},
   "scripts": {
