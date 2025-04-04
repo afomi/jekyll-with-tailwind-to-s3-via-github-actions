@@ -9,7 +9,11 @@ module.exports = {
   ],
   theme: {
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          sans: ['"Public Sans"', 'sans-serif'], // this overrides default `font-sans`
+        },
+      },
     },
   },
   plugins: []
