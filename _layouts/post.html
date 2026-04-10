@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="bg-white">
+<div class="bg-white dark:bg-neutral-950">
   {% include nav.html %}
 
   <main class="mx-auto max-w-3xl px-6 py-16 lg:px-8">
     <article>
       <header class="mb-12">
-        <div class="flex items-center gap-x-4 text-sm text-neutral-500">
+        <div class="flex items-center gap-x-4 text-sm text-neutral-500 dark:text-neutral-400">
           <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
             {{ page.date | date: "%B %d, %Y" }}
           </time>
@@ -17,25 +17,25 @@ layout: default
           <span>{{ page.author }}</span>
           {% endif %}
         </div>
-        <h1 class="mt-4 text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
+        <h1 class="mt-4 text-4xl font-bold tracking-tight text-neutral-900 dark:text-white sm:text-5xl">
           {{ page.title }}
         </h1>
         {% if page.excerpt %}
-        <p class="mt-6 text-xl text-neutral-600">
+        <p class="mt-6 text-xl text-neutral-600 dark:text-neutral-400">
           {{ page.excerpt }}
         </p>
         {% endif %}
       </header>
 
-      <div class="prose prose-neutral prose-lg max-w-none">
+      <div class="prose prose-neutral prose-lg max-w-none dark:prose-invert">
         {{ content }}
       </div>
     </article>
 
-    <footer class="mt-16 border-t border-neutral-200 pt-8">
+    <footer class="mt-16 border-t border-neutral-200 pt-8 dark:border-neutral-800">
       <a
         href="{{ "/blog" | relative_url }}"
-        class="text-sm font-semibold text-primary-600 hover:text-primary-500"
+        class="text-sm font-semibold text-primary-600 hover:text-primary-500 dark:text-primary-400 dark:hover:text-primary-300"
       >
         &larr; Back to all posts
       </a>

@@ -3,15 +3,15 @@ layout: default
 title: "Design System"
 ---
 
-<div class="bg-white">
+<div class="bg-white dark:bg-neutral-950">
   {% include nav.html %}
 
   <main class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-none">
-      <h1 class="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
+      <h1 class="text-4xl font-bold tracking-tight text-neutral-900 dark:text-white sm:text-5xl">
         Design System
       </h1>
-      <p class="mt-4 text-lg text-neutral-600">
+      <p class="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
         A living style guide showcasing the design tokens and components available in this project.
       </p>
 
@@ -20,240 +20,266 @@ title: "Design System"
         id="colors"
         class="mt-16"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Color Palettes</h2>
-        <p class="mt-2 text-neutral-600">
-          Custom color scales defined in <code class="rounded bg-neutral-100 px-1.5 py-0.5 text-sm">assets/css/tailwind.css</code>.
-          Modify the <code class="rounded bg-neutral-100 px-1.5 py-0.5 text-sm">@theme</code> block to customize.
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Color Palettes
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
+          Custom color scales defined in <code class="rounded bg-neutral-100 px-1.5 py-0.5 text-sm dark:bg-neutral-800">assets/css/tailwind.css</code>.
+          Modify the <code class="rounded bg-neutral-100 px-1.5 py-0.5 text-sm dark:bg-neutral-800">@theme</code> block to customize.
         </p>
 
         <!-- Primary Colors -->
         <div class="mt-8">
-          <h3 class="text-lg font-semibold text-neutral-800">Primary</h3>
-          <p class="mt-1 text-sm text-neutral-500">Main brand color. Classes: <code class="text-xs">bg-primary-{50-950}</code>, <code class="text-xs">text-primary-{50-950}</code></p>
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            Primary
+          </h3>
+          <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+            Main brand color.
+            Classes: <code class="text-xs">bg-primary-{50-950}</code>, <code class="text-xs">text-primary-{50-950}</code>
+          </p>
           <div class="mt-4 grid grid-cols-5 gap-2 sm:grid-cols-11">
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-50"></div>
-              <p class="text-xs text-neutral-600">50</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">50</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-100"></div>
-              <p class="text-xs text-neutral-600">100</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">100</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-200"></div>
-              <p class="text-xs text-neutral-600">200</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">200</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-300"></div>
-              <p class="text-xs text-neutral-600">300</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">300</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-400"></div>
-              <p class="text-xs text-neutral-600">400</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">400</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-500"></div>
-              <p class="text-xs text-neutral-600">500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">500</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-600"></div>
-              <p class="text-xs text-neutral-600">600</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">600</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-700"></div>
-              <p class="text-xs text-neutral-600">700</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">700</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-800"></div>
-              <p class="text-xs text-neutral-600">800</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">800</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-900"></div>
-              <p class="text-xs text-neutral-600">900</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">900</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-primary-950"></div>
-              <p class="text-xs text-neutral-600">950</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">950</p>
             </div>
           </div>
         </div>
 
         <!-- Secondary Colors -->
         <div class="mt-8">
-          <h3 class="text-lg font-semibold text-neutral-800">Secondary</h3>
-          <p class="mt-1 text-sm text-neutral-500">Supporting brand color. Classes: <code class="text-xs">bg-secondary-{50-950}</code>, <code class="text-xs">text-secondary-{50-950}</code></p>
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            Secondary
+          </h3>
+          <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+            Supporting brand color.
+            Classes: <code class="text-xs">bg-secondary-{50-950}</code>, <code class="text-xs">text-secondary-{50-950}</code>
+          </p>
           <div class="mt-4 grid grid-cols-5 gap-2 sm:grid-cols-11">
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-50"></div>
-              <p class="text-xs text-neutral-600">50</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">50</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-100"></div>
-              <p class="text-xs text-neutral-600">100</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">100</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-200"></div>
-              <p class="text-xs text-neutral-600">200</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">200</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-300"></div>
-              <p class="text-xs text-neutral-600">300</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">300</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-400"></div>
-              <p class="text-xs text-neutral-600">400</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">400</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-500"></div>
-              <p class="text-xs text-neutral-600">500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">500</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-600"></div>
-              <p class="text-xs text-neutral-600">600</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">600</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-700"></div>
-              <p class="text-xs text-neutral-600">700</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">700</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-800"></div>
-              <p class="text-xs text-neutral-600">800</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">800</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-900"></div>
-              <p class="text-xs text-neutral-600">900</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">900</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-secondary-950"></div>
-              <p class="text-xs text-neutral-600">950</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">950</p>
             </div>
           </div>
         </div>
 
         <!-- Accent Colors -->
         <div class="mt-8">
-          <h3 class="text-lg font-semibold text-neutral-800">Accent</h3>
-          <p class="mt-1 text-sm text-neutral-500">Highlight and CTA color. Classes: <code class="text-xs">bg-accent-{50-950}</code>, <code class="text-xs">text-accent-{50-950}</code></p>
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            Accent
+          </h3>
+          <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+            Highlight and CTA color.
+            Classes: <code class="text-xs">bg-accent-{50-950}</code>, <code class="text-xs">text-accent-{50-950}</code>
+          </p>
           <div class="mt-4 grid grid-cols-5 gap-2 sm:grid-cols-11">
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-50"></div>
-              <p class="text-xs text-neutral-600">50</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">50</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-100"></div>
-              <p class="text-xs text-neutral-600">100</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">100</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-200"></div>
-              <p class="text-xs text-neutral-600">200</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">200</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-300"></div>
-              <p class="text-xs text-neutral-600">300</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">300</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-400"></div>
-              <p class="text-xs text-neutral-600">400</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">400</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-500"></div>
-              <p class="text-xs text-neutral-600">500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">500</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-600"></div>
-              <p class="text-xs text-neutral-600">600</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">600</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-700"></div>
-              <p class="text-xs text-neutral-600">700</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">700</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-800"></div>
-              <p class="text-xs text-neutral-600">800</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">800</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-900"></div>
-              <p class="text-xs text-neutral-600">900</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">900</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-accent-950"></div>
-              <p class="text-xs text-neutral-600">950</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">950</p>
             </div>
           </div>
         </div>
 
         <!-- Neutral Colors -->
         <div class="mt-8">
-          <h3 class="text-lg font-semibold text-neutral-800">Neutral</h3>
-          <p class="mt-1 text-sm text-neutral-500">Text and background grays. Classes: <code class="text-xs">bg-neutral-{50-950}</code>, <code class="text-xs">text-neutral-{50-950}</code></p>
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            Neutral
+          </h3>
+          <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+            Text and background grays.
+            Classes: <code class="text-xs">bg-neutral-{50-950}</code>, <code class="text-xs">text-neutral-{50-950}</code>
+          </p>
           <div class="mt-4 grid grid-cols-5 gap-2 sm:grid-cols-11">
             <div class="space-y-1.5">
-              <div class="h-10 w-full rounded border border-neutral-200 bg-neutral-50"></div>
-              <p class="text-xs text-neutral-600">50</p>
+              <div class="h-10 w-full rounded border border-neutral-200 bg-neutral-50 dark:border-neutral-700"></div>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">50</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-100"></div>
-              <p class="text-xs text-neutral-600">100</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">100</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-200"></div>
-              <p class="text-xs text-neutral-600">200</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">200</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-300"></div>
-              <p class="text-xs text-neutral-600">300</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">300</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-400"></div>
-              <p class="text-xs text-neutral-600">400</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">400</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-500"></div>
-              <p class="text-xs text-neutral-600">500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">500</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-600"></div>
-              <p class="text-xs text-neutral-600">600</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">600</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-700"></div>
-              <p class="text-xs text-neutral-600">700</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">700</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-800"></div>
-              <p class="text-xs text-neutral-600">800</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">800</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-900"></div>
-              <p class="text-xs text-neutral-600">900</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">900</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-neutral-950"></div>
-              <p class="text-xs text-neutral-600">950</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">950</p>
             </div>
           </div>
         </div>
 
         <!-- Semantic Colors -->
         <div class="mt-8">
-          <h3 class="text-lg font-semibold text-neutral-800">Semantic</h3>
-          <p class="mt-1 text-sm text-neutral-500">Status and feedback colors.</p>
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            Semantic
+          </h3>
+          <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+            Status and feedback colors.
+          </p>
           <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-success-500"></div>
-              <p class="text-xs text-neutral-600">success-500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">success-500</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-warning-500"></div>
-              <p class="text-xs text-neutral-600">warning-500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">warning-500</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-error-500"></div>
-              <p class="text-xs text-neutral-600">error-500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">error-500</p>
             </div>
             <div class="space-y-1.5">
               <div class="h-10 w-full rounded bg-info-500"></div>
-              <p class="text-xs text-neutral-600">info-500</p>
+              <p class="text-xs text-neutral-600 dark:text-neutral-400">info-500</p>
             </div>
           </div>
         </div>
@@ -264,85 +290,102 @@ title: "Design System"
         id="typography"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Typography</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Typography
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Using the Public Sans font family with Tailwind's default type scale.
         </p>
 
         <div class="mt-8 space-y-8">
           <!-- Headings -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Headings</h3>
-            <div class="mt-4 space-y-4 rounded-lg border border-neutral-200 p-6">
-              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4">
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Headings
+            </h3>
+            <div class="mt-4 space-y-4 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
+              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4 dark:border-neutral-800">
                 <h1 class="text-5xl font-bold tracking-tight">Heading 1</h1>
-                <code class="text-xs text-neutral-500">text-5xl font-bold tracking-tight</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">text-5xl font-bold tracking-tight</code>
               </div>
-              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4">
+              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4 dark:border-neutral-800">
                 <h2 class="text-4xl font-bold tracking-tight">Heading 2</h2>
-                <code class="text-xs text-neutral-500">text-4xl font-bold tracking-tight</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">text-4xl font-bold tracking-tight</code>
               </div>
-              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4">
+              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4 dark:border-neutral-800">
                 <h3 class="text-3xl font-semibold">Heading 3</h3>
-                <code class="text-xs text-neutral-500">text-3xl font-semibold</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">text-3xl font-semibold</code>
               </div>
-              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4">
+              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4 dark:border-neutral-800">
                 <h4 class="text-2xl font-semibold">Heading 4</h4>
-                <code class="text-xs text-neutral-500">text-2xl font-semibold</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">text-2xl font-semibold</code>
               </div>
-              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4">
+              <div class="flex items-baseline justify-between border-b border-neutral-100 pb-4 dark:border-neutral-800">
                 <h5 class="text-xl font-semibold">Heading 5</h5>
-                <code class="text-xs text-neutral-500">text-xl font-semibold</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">text-xl font-semibold</code>
               </div>
               <div class="flex items-baseline justify-between">
                 <h6 class="text-lg font-semibold">Heading 6</h6>
-                <code class="text-xs text-neutral-500">text-lg font-semibold</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">text-lg font-semibold</code>
               </div>
             </div>
           </div>
 
           <!-- Body Text -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Body Text</h3>
-            <div class="mt-4 space-y-4 rounded-lg border border-neutral-200 p-6">
-              <div class="border-b border-neutral-100 pb-4">
-                <p class="text-xl text-neutral-900">Large body text for introductions and lead paragraphs.</p>
-                <code class="mt-2 block text-xs text-neutral-500">text-xl</code>
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Body Text
+            </h3>
+            <div class="mt-4 space-y-4 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
+              <div class="border-b border-neutral-100 pb-4 dark:border-neutral-800">
+                <p class="text-xl text-neutral-900 dark:text-neutral-100">
+                  Large body text for introductions and lead paragraphs.
+                </p>
+                <code class="mt-2 block text-xs text-neutral-500 dark:text-neutral-400">text-xl</code>
               </div>
-              <div class="border-b border-neutral-100 pb-4">
-                <p class="text-base text-neutral-900">Default body text for general content. This is the standard size used throughout the site for readability and consistency.</p>
-                <code class="mt-2 block text-xs text-neutral-500">text-base</code>
+              <div class="border-b border-neutral-100 pb-4 dark:border-neutral-800">
+                <p class="text-base text-neutral-900 dark:text-neutral-100">
+                  Default body text for general content.
+                  This is the standard size used throughout the site for readability and consistency.
+                </p>
+                <code class="mt-2 block text-xs text-neutral-500 dark:text-neutral-400">text-base</code>
               </div>
-              <div class="border-b border-neutral-100 pb-4">
-                <p class="text-sm text-neutral-600">Small text for captions, labels, and secondary information.</p>
-                <code class="mt-2 block text-xs text-neutral-500">text-sm text-neutral-600</code>
+              <div class="border-b border-neutral-100 pb-4 dark:border-neutral-800">
+                <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                  Small text for captions, labels, and secondary information.
+                </p>
+                <code class="mt-2 block text-xs text-neutral-500 dark:text-neutral-400">text-sm text-neutral-600</code>
               </div>
               <div>
-                <p class="text-xs text-neutral-500">Extra small text for fine print and metadata.</p>
-                <code class="mt-2 block text-xs text-neutral-500">text-xs text-neutral-500</code>
+                <p class="text-xs text-neutral-500 dark:text-neutral-400">
+                  Extra small text for fine print and metadata.
+                </p>
+                <code class="mt-2 block text-xs text-neutral-500 dark:text-neutral-400">text-xs text-neutral-500</code>
               </div>
             </div>
           </div>
 
           <!-- Font Weights -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Font Weights</h3>
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Font Weights
+            </h3>
             <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              <div class="rounded-lg border border-neutral-200 p-4">
+              <div class="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
                 <p class="text-xl font-normal">Regular</p>
-                <code class="text-xs text-neutral-500">font-normal (400)</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">font-normal (400)</code>
               </div>
-              <div class="rounded-lg border border-neutral-200 p-4">
+              <div class="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
                 <p class="text-xl font-medium">Medium</p>
-                <code class="text-xs text-neutral-500">font-medium (500)</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">font-medium (500)</code>
               </div>
-              <div class="rounded-lg border border-neutral-200 p-4">
+              <div class="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
                 <p class="text-xl font-semibold">Semibold</p>
-                <code class="text-xs text-neutral-500">font-semibold (600)</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">font-semibold (600)</code>
               </div>
-              <div class="rounded-lg border border-neutral-200 p-4">
+              <div class="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
                 <p class="text-xl font-bold">Bold</p>
-                <code class="text-xs text-neutral-500">font-bold (700)</code>
+                <code class="text-xs text-neutral-500 dark:text-neutral-400">font-bold (700)</code>
               </div>
             </div>
           </div>
@@ -354,15 +397,19 @@ title: "Design System"
         id="buttons"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Buttons</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Buttons
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Common button styles using the custom color palette.
         </p>
 
         <div class="mt-8 space-y-8">
           <!-- Primary Buttons -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Primary</h3>
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Primary
+            </h3>
             <div class="mt-4 flex flex-wrap items-center gap-4">
               <button
                 type="button"
@@ -387,7 +434,9 @@ title: "Design System"
 
           <!-- Secondary Buttons -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Secondary</h3>
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Secondary
+            </h3>
             <div class="mt-4 flex flex-wrap items-center gap-4">
               <button
                 type="button"
@@ -412,7 +461,9 @@ title: "Design System"
 
           <!-- Accent Buttons -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Accent</h3>
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Accent
+            </h3>
             <div class="mt-4 flex flex-wrap items-center gap-4">
               <button
                 type="button"
@@ -437,17 +488,19 @@ title: "Design System"
 
           <!-- Outline Buttons -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Outline</h3>
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Outline
+            </h3>
             <div class="mt-4 flex flex-wrap items-center gap-4">
               <button
                 type="button"
-                class="rounded-md border border-primary-600 bg-transparent px-3.5 py-2.5 text-sm font-semibold text-primary-600 hover:bg-primary-50"
+                class="rounded-md border border-primary-600 bg-transparent px-3.5 py-2.5 text-sm font-semibold text-primary-600 hover:bg-primary-50 dark:text-primary-400 dark:hover:bg-primary-950"
               >
                 Primary Outline
               </button>
               <button
                 type="button"
-                class="rounded-md border border-neutral-300 bg-transparent px-3.5 py-2.5 text-sm font-semibold text-neutral-700 hover:bg-neutral-50"
+                class="rounded-md border border-neutral-300 bg-transparent px-3.5 py-2.5 text-sm font-semibold text-neutral-700 hover:bg-neutral-50 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-900"
               >
                 Neutral Outline
               </button>
@@ -456,17 +509,19 @@ title: "Design System"
 
           <!-- Ghost Buttons -->
           <div>
-            <h3 class="text-lg font-semibold text-neutral-800">Ghost / Link</h3>
+            <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+              Ghost / Link
+            </h3>
             <div class="mt-4 flex flex-wrap items-center gap-4">
               <button
                 type="button"
-                class="text-sm font-semibold text-primary-600 hover:text-primary-500"
+                class="text-sm font-semibold text-primary-600 hover:text-primary-500 dark:text-primary-400 dark:hover:text-primary-300"
               >
                 Ghost Button
               </button>
               <a
                 href="#"
-                class="text-sm/6 font-semibold text-neutral-900"
+                class="text-sm/6 font-semibold text-neutral-900 dark:text-neutral-100"
               >
                 Learn more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -480,8 +535,10 @@ title: "Design System"
         id="spacing"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Spacing Scale</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Spacing Scale
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Tailwind's default spacing scale used for margin, padding, and gap.
         </p>
 
@@ -489,51 +546,51 @@ title: "Design System"
           <div class="flex flex-wrap items-end gap-2">
             <div class="text-center">
               <div class="h-1 w-1 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">1</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">1</p>
             </div>
             <div class="text-center">
               <div class="h-2 w-2 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">2</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">2</p>
             </div>
             <div class="text-center">
               <div class="h-3 w-3 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">3</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">3</p>
             </div>
             <div class="text-center">
               <div class="h-4 w-4 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">4</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">4</p>
             </div>
             <div class="text-center">
               <div class="h-5 w-5 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">5</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">5</p>
             </div>
             <div class="text-center">
               <div class="h-6 w-6 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">6</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">6</p>
             </div>
             <div class="text-center">
               <div class="h-8 w-8 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">8</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">8</p>
             </div>
             <div class="text-center">
               <div class="h-10 w-10 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">10</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">10</p>
             </div>
             <div class="text-center">
               <div class="h-12 w-12 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">12</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">12</p>
             </div>
             <div class="text-center">
               <div class="h-16 w-16 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">16</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">16</p>
             </div>
             <div class="text-center">
               <div class="h-20 w-20 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">20</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">20</p>
             </div>
             <div class="text-center">
               <div class="h-24 w-24 bg-primary-500"></div>
-              <p class="mt-2 text-xs text-neutral-500">24</p>
+              <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">24</p>
             </div>
           </div>
         </div>
@@ -544,35 +601,37 @@ title: "Design System"
         id="shadows"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Shadows</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Shadows
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Tailwind's default shadow scale for depth and elevation.
         </p>
 
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="rounded-lg bg-white p-6 shadow-sm">
-            <p class="font-medium text-neutral-900">shadow-sm</p>
-            <p class="mt-1 text-sm text-neutral-500">Subtle shadow for cards</p>
+          <div class="rounded-lg bg-white p-6 shadow-sm dark:bg-neutral-900">
+            <p class="font-medium text-neutral-900 dark:text-neutral-100">shadow-sm</p>
+            <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Subtle shadow for cards</p>
           </div>
-          <div class="rounded-lg bg-white p-6 shadow">
-            <p class="font-medium text-neutral-900">shadow</p>
-            <p class="mt-1 text-sm text-neutral-500">Default shadow</p>
+          <div class="rounded-lg bg-white p-6 shadow dark:bg-neutral-900">
+            <p class="font-medium text-neutral-900 dark:text-neutral-100">shadow</p>
+            <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Default shadow</p>
           </div>
-          <div class="rounded-lg bg-white p-6 shadow-md">
-            <p class="font-medium text-neutral-900">shadow-md</p>
-            <p class="mt-1 text-sm text-neutral-500">Medium shadow</p>
+          <div class="rounded-lg bg-white p-6 shadow-md dark:bg-neutral-900">
+            <p class="font-medium text-neutral-900 dark:text-neutral-100">shadow-md</p>
+            <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Medium shadow</p>
           </div>
-          <div class="rounded-lg bg-white p-6 shadow-lg">
-            <p class="font-medium text-neutral-900">shadow-lg</p>
-            <p class="mt-1 text-sm text-neutral-500">Large shadow for modals</p>
+          <div class="rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-900">
+            <p class="font-medium text-neutral-900 dark:text-neutral-100">shadow-lg</p>
+            <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Large shadow for modals</p>
           </div>
-          <div class="rounded-lg bg-white p-6 shadow-xl">
-            <p class="font-medium text-neutral-900">shadow-xl</p>
-            <p class="mt-1 text-sm text-neutral-500">Extra large shadow</p>
+          <div class="rounded-lg bg-white p-6 shadow-xl dark:bg-neutral-900">
+            <p class="font-medium text-neutral-900 dark:text-neutral-100">shadow-xl</p>
+            <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Extra large shadow</p>
           </div>
-          <div class="rounded-lg bg-white p-6 shadow-2xl">
-            <p class="font-medium text-neutral-900">shadow-2xl</p>
-            <p class="mt-1 text-sm text-neutral-500">Maximum shadow depth</p>
+          <div class="rounded-lg bg-white p-6 shadow-2xl dark:bg-neutral-900">
+            <p class="font-medium text-neutral-900 dark:text-neutral-100">shadow-2xl</p>
+            <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Maximum shadow depth</p>
           </div>
         </div>
       </section>
@@ -582,47 +641,49 @@ title: "Design System"
         id="radius"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Border Radius</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Border Radius
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Available border radius values for rounded corners.
         </p>
 
         <div class="mt-8 flex flex-wrap items-end gap-6">
           <div class="text-center">
             <div class="h-16 w-16 rounded-none bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">none</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">none</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded-sm bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">sm</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">sm</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">default</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">default</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded-md bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">md</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">md</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded-lg bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">lg</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">lg</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded-xl bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">xl</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">xl</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded-2xl bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">2xl</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">2xl</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded-3xl bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">3xl</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">3xl</p>
           </div>
           <div class="text-center">
             <div class="h-16 w-16 rounded-full bg-primary-500"></div>
-            <p class="mt-2 text-xs text-neutral-500">full</p>
+            <p class="mt-2 text-xs text-neutral-500 dark:text-neutral-400">full</p>
           </div>
         </div>
       </section>
@@ -632,32 +693,42 @@ title: "Design System"
         id="cards"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Cards</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Cards
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Example card components combining the design tokens.
         </p>
 
         <div class="mt-8 grid gap-6 lg:grid-cols-3">
           <!-- Simple Card -->
-          <div class="rounded-lg border border-neutral-200 bg-white p-6">
-            <h3 class="text-lg font-semibold text-neutral-900">Simple Card</h3>
-            <p class="mt-2 text-sm text-neutral-600">
-              A basic card with border and padding. Great for grouping related content.
+          <div class="rounded-lg border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+              Simple Card
+            </h3>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              A basic card with border and padding.
+              Great for grouping related content.
             </p>
           </div>
 
           <!-- Card with Shadow -->
-          <div class="rounded-lg bg-white p-6 shadow-md">
-            <h3 class="text-lg font-semibold text-neutral-900">Shadow Card</h3>
-            <p class="mt-2 text-sm text-neutral-600">
-              Card with shadow for elevated appearance. Good for important content.
+          <div class="rounded-lg bg-white p-6 shadow-md dark:bg-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+              Shadow Card
+            </h3>
+            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Card with shadow for elevated appearance.
+              Good for important content.
             </p>
           </div>
 
           <!-- Colored Card -->
-          <div class="rounded-lg bg-primary-50 p-6">
-            <h3 class="text-lg font-semibold text-primary-900">Primary Card</h3>
-            <p class="mt-2 text-sm text-primary-700">
+          <div class="rounded-lg bg-primary-50 p-6 dark:bg-primary-950">
+            <h3 class="text-lg font-semibold text-primary-900 dark:text-primary-100">
+              Primary Card
+            </h3>
+            <p class="mt-2 text-sm text-primary-700 dark:text-primary-300">
               Card using the primary color palette for emphasis.
             </p>
           </div>
@@ -669,23 +740,33 @@ title: "Design System"
         id="alerts"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Alerts</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Alerts
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Feedback messages using semantic colors.
         </p>
 
         <div class="mt-8 space-y-4">
           <div class="rounded-lg bg-success-500/10 p-4">
-            <p class="text-sm font-medium text-success-500">Success! Your changes have been saved.</p>
+            <p class="text-sm font-medium text-success-500">
+              Success! Your changes have been saved.
+            </p>
           </div>
           <div class="rounded-lg bg-info-500/10 p-4">
-            <p class="text-sm font-medium text-info-500">Info: A new version is available.</p>
+            <p class="text-sm font-medium text-info-500">
+              Info: A new version is available.
+            </p>
           </div>
           <div class="rounded-lg bg-warning-500/10 p-4">
-            <p class="text-sm font-medium text-warning-500">Warning: Your session will expire soon.</p>
+            <p class="text-sm font-medium text-warning-500">
+              Warning: Your session will expire soon.
+            </p>
           </div>
           <div class="rounded-lg bg-error-500/10 p-4">
-            <p class="text-sm font-medium text-error-500">Error: Unable to process your request.</p>
+            <p class="text-sm font-medium text-error-500">
+              Error: Unable to process your request.
+            </p>
           </div>
         </div>
       </section>
@@ -695,8 +776,10 @@ title: "Design System"
         id="forms"
         class="mt-20"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Form Elements</h2>
-        <p class="mt-2 text-neutral-600">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Form Elements
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
           Basic form input styling.
         </p>
 
@@ -704,7 +787,7 @@ title: "Design System"
           <div>
             <label
               for="input-example"
-              class="block text-sm/6 font-medium text-neutral-900"
+              class="block text-sm/6 font-medium text-neutral-900 dark:text-neutral-100"
             >
               Text Input
             </label>
@@ -712,20 +795,20 @@ title: "Design System"
               type="text"
               id="input-example"
               placeholder="Enter your name"
-              class="mt-2 block w-full rounded-md border border-neutral-300 px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+              class="mt-2 block w-full rounded-md border border-neutral-300 px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100 dark:placeholder:text-neutral-500"
             >
           </div>
 
           <div>
             <label
               for="select-example"
-              class="block text-sm/6 font-medium text-neutral-900"
+              class="block text-sm/6 font-medium text-neutral-900 dark:text-neutral-100"
             >
               Select
             </label>
             <select
               id="select-example"
-              class="mt-2 block w-full rounded-md border border-neutral-300 px-3 py-2 text-neutral-900 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+              class="mt-2 block w-full rounded-md border border-neutral-300 px-3 py-2 text-neutral-900 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
             >
               <option>Option 1</option>
               <option>Option 2</option>
@@ -736,7 +819,7 @@ title: "Design System"
           <div>
             <label
               for="textarea-example"
-              class="block text-sm/6 font-medium text-neutral-900"
+              class="block text-sm/6 font-medium text-neutral-900 dark:text-neutral-100"
             >
               Textarea
             </label>
@@ -744,7 +827,7 @@ title: "Design System"
               id="textarea-example"
               rows="3"
               placeholder="Enter your message"
-              class="mt-2 block w-full rounded-md border border-neutral-300 px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+              class="mt-2 block w-full rounded-md border border-neutral-300 px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100 dark:placeholder:text-neutral-500"
             ></textarea>
           </div>
         </div>
@@ -753,27 +836,39 @@ title: "Design System"
       <!-- Configuration Guide -->
       <section
         id="configuration"
-        class="mt-20 rounded-lg border border-neutral-200 bg-neutral-50 p-6"
+        class="mt-20 rounded-lg border border-neutral-200 bg-neutral-50 p-6 dark:border-neutral-800 dark:bg-neutral-900"
       >
-        <h2 class="text-2xl font-bold text-neutral-900">Customizing Colors</h2>
-        <p class="mt-2 text-neutral-600">
-          To customize the color palette, edit the <code class="rounded bg-white px-1.5 py-0.5 text-sm">@theme</code> block in <code class="rounded bg-white px-1.5 py-0.5 text-sm">assets/css/tailwind.css</code>.
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">
+          Customizing Colors
+        </h2>
+        <p class="mt-2 text-neutral-600 dark:text-neutral-400">
+          To customize the color palette, edit the <code class="rounded bg-white px-1.5 py-0.5 text-sm dark:bg-neutral-800">@theme</code> block in <code class="rounded bg-white px-1.5 py-0.5 text-sm dark:bg-neutral-800">assets/css/tailwind.css</code>.
         </p>
 
         <div class="mt-6">
-          <h3 class="text-lg font-semibold text-neutral-800">Color Format</h3>
-          <p class="mt-2 text-sm text-neutral-600">
-            Colors use the OKLCH format: <code class="rounded bg-white px-1.5 py-0.5 text-xs">oklch(lightness chroma hue)</code>
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            Color Format
+          </h3>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+            Colors use the OKLCH format: <code class="rounded bg-white px-1.5 py-0.5 text-xs dark:bg-neutral-800">oklch(lightness chroma hue)</code>
           </p>
-          <ul class="mt-3 space-y-1 text-sm text-neutral-600">
-            <li><strong>Lightness:</strong> 0 (black) to 1 (white)</li>
-            <li><strong>Chroma:</strong> 0 (gray) to ~0.4 (vivid)</li>
-            <li><strong>Hue:</strong> 0-360 degrees (red=0, green=145, blue=265)</li>
+          <ul class="mt-3 space-y-1 text-sm text-neutral-600 dark:text-neutral-400">
+            <li>
+              <strong>Lightness:</strong> 0 (black) to 1 (white)
+            </li>
+            <li>
+              <strong>Chroma:</strong> 0 (gray) to ~0.4 (vivid)
+            </li>
+            <li>
+              <strong>Hue:</strong> 0-360 degrees (red=0, green=145, blue=265)
+            </li>
           </ul>
         </div>
 
         <div class="mt-6">
-          <h3 class="text-lg font-semibold text-neutral-800">Example: Change Primary to Blue</h3>
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            Example: Change Primary to Blue
+          </h3>
           <pre class="mt-2 overflow-x-auto rounded-md bg-neutral-800 p-4 text-sm text-neutral-100"><code>@theme {
   --color-primary-500: oklch(0.58 0.22 240);
   --color-primary-600: oklch(0.50 0.22 240);
@@ -782,8 +877,10 @@ title: "Design System"
         </div>
 
         <div class="mt-6">
-          <h3 class="text-lg font-semibold text-neutral-800">After Making Changes</h3>
-          <p class="mt-2 text-sm text-neutral-600">
+          <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            After Making Changes
+          </h3>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
             Rebuild the CSS to apply your changes:
           </p>
           <pre class="mt-2 overflow-x-auto rounded-md bg-neutral-800 p-4 text-sm text-neutral-100"><code>npm run build:css</code></pre>

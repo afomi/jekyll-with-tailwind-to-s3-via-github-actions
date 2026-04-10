@@ -1,4 +1,4 @@
-<header class="border-b border-neutral-200">
+<header class="relative z-10 border-b border-neutral-200 dark:border-neutral-800">
   <nav
     class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
     aria-label="Global"
@@ -19,7 +19,7 @@
     <div class="flex lg:hidden">
       <button
         type="button"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-700"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-700 dark:text-neutral-300"
         aria-expanded="false"
         aria-controls="mobile-menu"
         onclick="document.getElementById('mobile-menu').classList.remove('hidden')"
@@ -44,19 +44,19 @@
     <div class="hidden lg:flex lg:gap-x-12">
       <a
         href="{{ "/blog" | relative_url }}"
-        class="text-sm/6 font-semibold text-neutral-900"
+        class="text-sm/6 font-semibold text-neutral-900 dark:text-neutral-100"
       >
         Blog
       </a>
       <a
         href="{{ "/design" | relative_url }}"
-        class="text-sm/6 font-semibold text-neutral-900"
+        class="text-sm/6 font-semibold text-neutral-900 dark:text-neutral-100"
       >
         Design
       </a>
       <a
         href="https://github.com/new?template_name=jekyll-with-tailwind&template_owner=afomi"
-        class="text-sm/6 font-semibold text-neutral-900"
+        class="text-sm/6 font-semibold text-neutral-900 dark:text-neutral-100"
       >
         Use Template
       </a>
@@ -64,7 +64,7 @@
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a
         href="https://github.com/afomi/jekyll-with-tailwind"
-        class="text-sm/6 font-semibold text-neutral-900"
+        class="text-sm/6 font-semibold text-neutral-900 dark:text-neutral-100"
       >
         GitHub <span aria-hidden="true">&rarr;</span>
       </a>
@@ -82,7 +82,7 @@
       class="fixed inset-0 z-50 bg-neutral-900/50"
       onclick="document.getElementById('mobile-menu').classList.add('hidden')"
     ></div>
-    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10">
+    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 dark:bg-neutral-900 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10 dark:sm:ring-neutral-100/10">
       <div class="flex items-center justify-between">
         <a
           href="{{ "/" | relative_url }}"
@@ -97,7 +97,7 @@
         </a>
         <button
           type="button"
-          class="-m-2.5 rounded-md p-2.5 text-neutral-700"
+          class="-m-2.5 rounded-md p-2.5 text-neutral-700 dark:text-neutral-300"
           onclick="document.getElementById('mobile-menu').classList.add('hidden')"
         >
           <span class="sr-only">Close menu</span>
@@ -122,19 +122,19 @@
           <div class="space-y-2 py-6">
             <a
               href="{{ "/blog" | relative_url }}"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50 dark:text-neutral-100 dark:hover:bg-neutral-800"
             >
               Blog
             </a>
             <a
               href="{{ "/design" | relative_url }}"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50 dark:text-neutral-100 dark:hover:bg-neutral-800"
             >
               Design
             </a>
             <a
               href="https://github.com/new?template_name=jekyll-with-tailwind&template_owner=afomi"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50 dark:text-neutral-100 dark:hover:bg-neutral-800"
             >
               Use Template
             </a>
@@ -142,7 +142,7 @@
           <div class="py-6">
             <a
               href="https://github.com/afomi/jekyll-with-tailwind"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50 dark:text-neutral-100 dark:hover:bg-neutral-800"
             >
               GitHub
             </a>

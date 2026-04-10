@@ -86,3 +86,10 @@
 html {
   font-family: "Public Sans", sans-serif;
 }
+
+/* Dark mode base styles */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
