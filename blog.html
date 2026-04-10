@@ -4,25 +4,7 @@ title: "Blog"
 ---
 
 <div class="bg-white">
-  <header class="border-b border-neutral-200">
-    <nav
-      class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-      aria-label="Global"
-    >
-      <a
-        href="{{ "/" | relative_url }}"
-        class="text-sm/6 font-semibold text-neutral-900"
-      >
-        &larr; Back to Home
-      </a>
-      <a
-        href="{{ "/design" | relative_url }}"
-        class="text-sm/6 font-semibold text-neutral-900"
-      >
-        Design System
-      </a>
-    </nav>
-  </header>
+  {% include nav.html %}
 
   <main class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
     <div class="mx-auto max-w-2xl">

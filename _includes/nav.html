@@ -1,0 +1,154 @@
+<header class="border-b border-neutral-200">
+  <nav
+    class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+    aria-label="Global"
+  >
+    <div class="flex lg:flex-1">
+      <a
+        href="{{ "/" | relative_url }}"
+        class="-m-1.5 p-1.5"
+      >
+        <span class="sr-only">{{ site.title }}</span>
+        <img
+          class="h-8 w-auto"
+          src="{{ "/assets/img/mark.svg" | relative_url }}"
+          alt="logo"
+        >
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-700"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        onclick="document.getElementById('mobile-menu').classList.remove('hidden')"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="size-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <a
+        href="{{ "/blog" | relative_url }}"
+        class="text-sm/6 font-semibold text-neutral-900"
+      >
+        Blog
+      </a>
+      <a
+        href="{{ "/design" | relative_url }}"
+        class="text-sm/6 font-semibold text-neutral-900"
+      >
+        Design
+      </a>
+      <a
+        href="https://github.com/new?template_name=jekyll-with-tailwind&template_owner=afomi"
+        class="text-sm/6 font-semibold text-neutral-900"
+      >
+        Use Template
+      </a>
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a
+        href="https://github.com/afomi/jekyll-with-tailwind"
+        class="text-sm/6 font-semibold text-neutral-900"
+      >
+        GitHub <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="hidden lg:hidden"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div
+      class="fixed inset-0 z-50 bg-neutral-900/50"
+      onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+    ></div>
+    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10">
+      <div class="flex items-center justify-between">
+        <a
+          href="{{ "/" | relative_url }}"
+          class="-m-1.5 p-1.5"
+        >
+          <span class="sr-only">{{ site.title }}</span>
+          <img
+            class="h-8 w-auto"
+            src="{{ "/assets/img/mark.svg" | relative_url }}"
+            alt="logo"
+          >
+        </a>
+        <button
+          type="button"
+          class="-m-2.5 rounded-md p-2.5 text-neutral-700"
+          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+        >
+          <span class="sr-only">Close menu</span>
+          <svg
+            class="size-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-neutral-500/10">
+          <div class="space-y-2 py-6">
+            <a
+              href="{{ "/blog" | relative_url }}"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+            >
+              Blog
+            </a>
+            <a
+              href="{{ "/design" | relative_url }}"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+            >
+              Design
+            </a>
+            <a
+              href="https://github.com/new?template_name=jekyll-with-tailwind&template_owner=afomi"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+            >
+              Use Template
+            </a>
+          </div>
+          <div class="py-6">
+            <a
+              href="https://github.com/afomi/jekyll-with-tailwind"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-neutral-900 hover:bg-neutral-50"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

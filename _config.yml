@@ -4,7 +4,12 @@ baseurl: ""
 
 title: "Own Your Website" # the name of your site, e.g. ACME Corp.
 
+description: "A simple, modern template for building your own website."
+
+permalink: /blog/:title/
+
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
 
 exclude:
